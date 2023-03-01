@@ -2,7 +2,6 @@ package configuration;
 
 import org.example.Calculator;
 
-import org.example.Timeout;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
