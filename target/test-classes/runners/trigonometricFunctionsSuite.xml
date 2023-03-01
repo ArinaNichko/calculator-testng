@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Additional calculator functions" parallel="methods">
+    <test name="Trigonometric calculator Tests">
+        <classes>
+            <class name="tests.TrigonometricFunctions.TgTest"/>
+            <class name="tests.TrigonometricFunctions.SinTest"/>
+            <class name="tests.TrigonometricFunctions.CosTest"/>
+            <class name="tests.TrigonometricFunctions.CtgTest"/>
+        </classes>
+    </test>
+</suite>

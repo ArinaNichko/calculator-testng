@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MasterSuite" verbose="1" parallel="tests">
+    <suite-files>
+        <suite-file path="additionalFunctionsSuite.xml"/>
+        <suite-file path="mainFunctionsSuite.xml"/>
+        <suite-file path="trigonometricFunctionsSuite.xml"/>
+    </suite-files>
+</suite>
