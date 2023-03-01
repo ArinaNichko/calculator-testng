@@ -4,6 +4,7 @@
         <classes>
             <class name="tests.AdditionalFunctions.IsNegativeTest"/>
             <class name="tests.AdditionalFunctions.IsPositiveTest"/>
+            <class name="tests.AdditionalFunctions.SleepTest"/>
         </classes>
     </test>
 </suite>
