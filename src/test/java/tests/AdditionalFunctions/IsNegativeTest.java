@@ -12,7 +12,7 @@ public class IsNegativeTest extends BaseTest {
   }
 
   @Test
-  public void isNotNegativePositiveTest() {
+  public void isNotNegativeTest() {
     Assert.assertFalse(calculator.isNegative(0));
   }
 }
