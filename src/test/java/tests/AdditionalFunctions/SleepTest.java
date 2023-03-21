@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class SleepTest {
 
   @Test
-  public void sleep() {
+  public void sleepDurationMoreThanOneSecondTest() {
     long startTime = System.currentTimeMillis();
     Timeout.sleep(1);
     long endTime = System.currentTimeMillis();
@@ -16,7 +16,7 @@ public class SleepTest {
   }
 
   @Test
-  public void sleepWithZero() {
+  public void sleepWithDurationZero() {
     long startTime = System.currentTimeMillis();
     Timeout.sleep(0);
     long endTime = System.currentTimeMillis();

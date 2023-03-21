@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Additional calculator functions" parallel="methods">
+    <test name="Sine test">
+        <parameter name="filepath" value="src/test/resources/testData/trigonometryFunction/sineData.csv"/>
+        <parameter name="isMainFunction" value="false"/>
+        <classes>
+            <class name="tests.TrigonometryFunctions.SinTest" />
+        </classes>
+    </test>
+    <test name="Cosine test">
+        <parameter name="isMainFunction" value="false"/>
+        <parameter name="filepath" value="src/test/resources/testData/trigonometryFunction/cosineData.csv"/>
+        <classes>
+            <class name="tests.TrigonometryFunctions.CosTest"/>
+        </classes>
+    </test>
+    <test name="Tangent test">
+        <parameter name="filepath" value="src/test/resources/testData/trigonometryFunction/tangentData.csv"/>
+        <parameter name="isMainFunction" value="false"/>
+        <classes>
+            <class name="tests.TrigonometryFunctions.TgTest"/>
+        </classes>
+    </test>
+    <test name="Cotangent test">
+        <parameter name="filepath" value="src/test/resources/testData/trigonometryFunction/cotangentData.csv"/>
+        <parameter name="isMainFunction" value="false"/>
+        <classes>
+            <class name="tests.TrigonometryFunctions.CtgTest"/>
+        </classes>
+    </test>
+    <test name="Square root test">
+        <parameter name="filepath" value="src/test/resources/testData/trigonometryFunction/squareRootData.csv"/>
+        <parameter name="isMainFunction" value="false"/>
+        <classes>
+            <class name="tests.TrigonometryFunctions.SqrtTest"/>
+        </classes>
+    </test>
+</suite>

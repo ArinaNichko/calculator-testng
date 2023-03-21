@@ -1,0 +1,3 @@
+expected result,a,b
+Infinity,1.0,0
+-Infinity,-5.0,0

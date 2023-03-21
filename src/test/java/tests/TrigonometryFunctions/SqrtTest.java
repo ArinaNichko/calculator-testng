@@ -1,4 +1,4 @@
-package tests.MainFunctions;
+package tests.TrigonometryFunctions;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -7,8 +7,8 @@ import utils.DataUtil;
 
 public class SqrtTest extends BaseTest {
 
-  @Test(dataProvider = "createDataForSqrt", dataProviderClass = DataUtil.class)
-  public void sqrt(double expected, double a) {
+  @Test(dataProvider = "CalculatorOperationData", dataProviderClass = DataUtil.class)
+  public void squareRootTest(double expected, double a) {
     Assert.assertEquals(calculator.sqrt(a), expected, DELTA);
   }
 }

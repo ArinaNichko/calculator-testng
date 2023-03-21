@@ -1,18 +1,83 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Main calculator functions" parallel="methods">
-    <test name="Main calculator Tests">
+<suite name="Main calculator functions" parallel="classes">
+    <test name="Long numbers subtraction test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/longSubtractionData.csv"/>
+        <parameter name="isMainFunction" value="true" />
+        <classes>
+            <class name="tests.MainFunctions.SubLongTest"/>
+        </classes>
+    </test>
+    <test name="Double numbers subtraction test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/doubleSubtractionData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <classes>
+            <class name="tests.MainFunctions.SubDoubleTest"/>
+        </classes>
+    </test>
+    <test name="Long numbers multiplication test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/longMultiplicationData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <classes>
+            <class name="tests.MainFunctions.MultLongTest"/>
+        </classes>
+    </test>
+    <test name="Double numbers multiplication test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/doubleMultiplicationData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <classes>
+            <class name="tests.MainFunctions.MultDoubleTest"/>
+        </classes>
+    </test>
+    <test name="Long numbers division test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/longDivisionData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <classes>
+            <class name="tests.MainFunctions.DivLongTest"/>
+        </classes>
+    </test>
+    <test name="Double numbers division test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/doubleDivisionData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <groups>
+            <run>
+                <include name="division"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.MainFunctions.DivDoubleTest"/>
+        </classes>
+    </test>
+    <test name="division by zero test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/doubleDivisionByZeroData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <groups>
+            <run>
+                <include name="divisionByZero"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.MainFunctions.DivDoubleTest"/>
+        </classes>
+    </test>
+    <test name="Power calculation Test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/doublePowerData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <classes>
+            <class name="tests.MainFunctions.PowTest"/>
+        </classes>
+    </test>
+    <test name="Long numbers sum Test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/longSumData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
         <classes>
             <class name="tests.MainFunctions.SumLongTest"/>
-            <class name="tests.MainFunctions.SubDoubleTest"/>
-            <class name="tests.MainFunctions.SubDoubleTest"/>
-            <class name="tests.MainFunctions.SubLongTest"/>
-            <class name="tests.MainFunctions.MultDoubleTest"/>
-            <class name="tests.MainFunctions.MultLongTest"/>
-            <class name="tests.MainFunctions.DivDoubleTest"/>
-            <class name="tests.MainFunctions.DivLongTest"/>
-            <class name="tests.MainFunctions.DivLongTest"/>
-            <class name="tests.MainFunctions.SqrtTest"/>
-            <class name="tests.MainFunctions.PowTest"/>
+        </classes>
+    </test>
+    <test name="Double numbers sum Test">
+        <parameter name="filepath" value="src/test/resources/testData/mainFunction/doubleSumData.csv"/>
+        <parameter name="isMainFunction" value="true"/>
+        <classes>
+            <class name="tests.MainFunctions.SumDoubleTest"/>
         </classes>
     </test>
 </suite>
