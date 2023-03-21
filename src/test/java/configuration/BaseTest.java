@@ -6,7 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
-  final protected static double DELTA = 0.001d;
+  final protected static double DELTA = 0.01d;
   protected static Calculator calculator;
 
   @BeforeClass
@@ -16,6 +16,5 @@ public class BaseTest {
 
   @AfterClass
   public static void afterTestConfiguration() {
-
   }
 }

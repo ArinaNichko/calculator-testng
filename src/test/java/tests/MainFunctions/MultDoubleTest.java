@@ -7,8 +7,8 @@ import utils.DataUtil;
 
 public class MultDoubleTest extends BaseTest {
 
-  @Test(dataProvider = "createDataForMultDouble", dataProviderClass = DataUtil.class)
-  public void multDouble(double expected, double a, double b) {
+  @Test(dataProvider = "CalculatorOperationData", dataProviderClass = DataUtil.class)
+  public void doubleNumbersMultiplicationTest(double expected, double a, double b) {
     Assert.assertEquals(calculator.mult(a, b), expected, DELTA);
   }
 }

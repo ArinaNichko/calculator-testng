@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Trigonometric calculator functions" parallel="methods">
+<suite name="Trigonometric calculator functions" parallel="classes">
     <test name="Additional calculator Tests">
         <classes>
             <class name="tests.AdditionalFunctions.IsNegativeTest"/>

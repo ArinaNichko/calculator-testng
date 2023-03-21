@@ -7,13 +7,13 @@ import utils.DataUtil;
 
 public class DivDoubleTest extends BaseTest {
 
-  @Test(dataProvider = "createDataForDivDouble", dataProviderClass = DataUtil.class)
-  public void divDouble(double expected, double a, double b) {
+  @Test(dataProvider = "CalculatorOperationData", dataProviderClass = DataUtil.class, groups = {"division"})
+  public void doubleNumbersDivisionTest(double expected, double a, double b) {
     Assert.assertEquals(calculator.div(a, b), expected, DELTA);
   }
 
-  @Test(dataProvider = "createDataForDivByZero", dataProviderClass = DataUtil.class)
-  public void divDoubleByZero(double expected, double a, double b) {
+  @Test(dataProvider = "CalculatorOperationData", dataProviderClass = DataUtil.class, groups = {"divisionByZero"})
+  public void  divisionByZeroTest(double expected, double a, double b) {
     Assert.assertEquals(calculator.div(a, b), expected);
   }
 }

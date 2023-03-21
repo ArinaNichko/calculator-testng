@@ -7,13 +7,13 @@ import utils.DataUtil;
 
 public class DivLongTest extends BaseTest {
 
-  @Test(dataProvider = "createDataForDivLong", dataProviderClass = DataUtil.class)
-  public void divLong(long expected, long a, long b) {
+  @Test(dataProvider = "CalculatorOperationData", dataProviderClass = DataUtil.class)
+  public void longNumbersDivisionTest(long expected, long a, long b) {
     Assert.assertEquals(calculator.div(a, b), expected);
   }
 
   @Test(expectedExceptions = NumberFormatException.class)
-  public void divLongByZero() {
+  public void divisionByZeroThrowsExceptionTest() {
     calculator.div(10, 0);
   }
 }

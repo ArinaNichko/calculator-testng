@@ -7,8 +7,8 @@ import utils.DataUtil;
 
 public class PowTest extends BaseTest {
 
-  @Test(dataProvider = "createDataForPow", dataProviderClass = DataUtil.class)
-  public void pow(double expected, double a, double b) {
+  @Test(dataProvider = "CalculatorOperationData", dataProviderClass = DataUtil.class)
+  public void powerTest(double expected, double a, double b) {
     Assert.assertEquals(calculator.pow(a, b), expected, DELTA);
   }
 }
